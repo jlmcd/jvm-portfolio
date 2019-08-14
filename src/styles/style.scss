@@ -1,0 +1,46 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300i,400&display=swap');
+@import './sass-vars';
+
+// PLACEHOLDER CLASSES
+%App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// WIDTHS
+$step-1: 1440px;
+$step-2: 1045px;
+$step-3: 820px;
+$phone-width: 420px;
+
+// MIXINS
+@mixin step1 {
+  @media (max-width: #{$step-1}) {
+    @content;
+  }
+}
+@mixin step2 {
+  @media (max-width: #{$step-2}) {
+    @content;
+  }
+}
+@mixin step3 {
+  @media (max-width: #{$step-3}) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+// PARTIALS:
+@import './index';
+@import './nav';
+
+
+.not-found-page {
+  @extend %App;
+}

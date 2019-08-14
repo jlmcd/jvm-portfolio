@@ -1,0 +1,69 @@
+.navbar-container {
+  background: $black;
+  color: $white;
+  height: 70px;
+  .main-navbar {
+    height: 100%;
+    @extend %App;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links,
+    .social-icons {
+      display: flex;
+      list-style: none;
+      font-family: $main-font;
+      font-size: 1.2rem;
+      position: relative;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      li {
+        cursor: pointer;
+        margin: 0 2rem;
+        transition: 0.2s;
+        position: relative;
+        &:hover {
+          color: red;
+        }
+      }
+      i {
+        cursor: pointer;
+        color: $white;
+        margin: 0 1rem;
+        transition: 0.2s;
+        font-size: 1.7rem;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    .dropdown {
+      position: absolute;
+      z-index: -1;
+      background: $black;
+      left: -50%;
+      height: 0;
+      overflow: hidden;
+      bottom: 200%;
+      transition: .3s;
+      li {
+        margin: 1.5rem;
+        &:hover {
+          color: orangered;
+        }
+      }
+    }
+    .show-dropdown {
+      height: 550%;
+      bottom: 200%;
+      z-index: 3;
+    }
+    .show-dropdown-below {
+      height: 550%;
+      top: 200%;
+      z-index: 3;
+    }
+  }
+}
