@@ -1,0 +1,59 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300i,400&display=swap');
+@import './sass-vars';
+
+%App {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+// Hide branding for wistia-hosted video
+.w-vulcan-icon-wrapper, .w-bottom-bar {
+  display: none !important;
+}
+.Index {
+  .hero {
+    min-width: 100vw;
+    position: relative;
+    height: calc(100vh - 60px);
+    .video-background {
+      position: absolute;
+      width: 100vw;
+      max-height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .hero-text {
+      color: $white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: $main-font;
+      h1 {
+        font-size: 13rem;
+        font-weight: 100;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1.3rem;
+        span {
+          margin: .3rem;
+        }
+      }
+    }
+  }
+}
+.four-o-four {
+  @extend %App;
+}
