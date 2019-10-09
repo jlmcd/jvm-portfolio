@@ -1,0 +1,13 @@
+.about-page {
+  .about-container {
+    @extend %App;
+    font-family: $main-font;
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    p {
+      line-height: 1.3rem;
+    }
+  }
+}

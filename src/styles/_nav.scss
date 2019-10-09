@@ -39,7 +39,7 @@
         }
       }
     }
-    .dropdown {
+    .dropup {
       position: absolute;
       z-index: -1;
       background: $black;
@@ -54,6 +54,10 @@
           color: orangered;
         }
       }
+    }
+    .dropdown {
+      @extend .dropup;
+      top: 200%;
     }
     .show-dropdown {
       height: 550%;

@@ -28,9 +28,11 @@ export default props => {
                   onMouseLeave={() => setShowMenu(false)}
                   className={
                     showMenu && props.route === "home"
-                      ? "dropdown show-dropdown"
+                      ? "dropup show-dropdown"
                       : showMenu && props.route !== "home"
                       ? "dropdown show-dropdown-below"
+                      : props.route === "home"
+                      ? "dropup"
                       : "dropdown"
                   }
                 >
