@@ -37,10 +37,10 @@ export default props => {
                   }
                 >
                   <Link to="/photo">
-                    <li>Photo</li>
+                    <div className="li">Photo</div>
                   </Link>
                   <Link to="video">
-                    <li>Video</li>
+                    <div className="li">Video</div>
                   </Link>
                 </div>
               </li>

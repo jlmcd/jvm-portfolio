@@ -2,6 +2,7 @@
 .w-vulcan-icon-wrapper, .w-bottom-bar {
   display: none !important;
 }
+
 .index-page {
   .hero {
     min-width: 100%;
@@ -70,6 +71,25 @@
         @include step3 {
           font-size: 1.2rem;
           line-height: 1.5rem;
+        }
+      }
+      @media screen and (max-height: 800px) {
+        padding: 6vw 0;
+      }
+      @media screen and (max-height: 600px) {
+        padding: 4vw 0;
+        // background: red;
+      }
+      @media screen and (max-height: 550px) {
+        // background: blue;
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+        h1 {
+          font-size: 8rem;
+        }
+        h3 span {
+          font-size: 1.3rem;
         }
       }
     }

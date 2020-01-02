@@ -20,10 +20,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `jase-van-meeteren-portfolio`,
+        short_name: `jvn-portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#eeedee`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.

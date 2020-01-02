@@ -1,0 +1,8 @@
+* {
+  &:focus {
+    outline-color: $red-light-2;
+  }             
+  &:active {
+    outline: none;
+  }
+}

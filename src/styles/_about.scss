@@ -2,12 +2,53 @@
   .about-container {
     @extend %App;
     font-family: $main-font;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     h1 {
-      font-size: 2rem;
+      font-size: 4rem;
       margin: 1rem 0;
+      font-weight: 200;
+      color: $black;
     }
     p {
-      line-height: 1.3rem;
+      line-height: 1.5rem;
+      width: 35%;
+      text-align: justify;
+      margin-top: 3rem;
+      margin-left: 5%;
+      @include step3 {
+        width: 90%;
+        margin: 1rem auto;
+      }
+    }
+    @include step3 {
+      flex-direction: column;
+    }
+  }
+  header {
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from 90deg at 60% 65%, rgba($white, .6), rgba($gray, .6), rgba($black, .6));
+    background-position: right;
+  }
+  img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    right: 5%;
+    bottom: 75px;
+    @include step2 {
+      bottom: 30px;
+    }
+    @include step3 {
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
   }
 }

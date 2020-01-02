@@ -19,23 +19,24 @@
         text-decoration: none;
         color: $white;
       }
-      li {
+      li, .li {
         cursor: pointer;
-        margin: 0 2rem;
+        margin: 0 3rem 0 0;
         transition: 0.2s;
         position: relative;
+        color: $white;
         &:hover {
-          color: red;
+          color: $red;
         }
       }
       i {
         cursor: pointer;
         color: $white;
-        margin: 0 1rem;
+        margin: 0 0 0 1.5rem;
         transition: 0.2s;
         font-size: 1.7rem;
         &:hover {
-          color: red;
+          color: $red;
         }
       }
     }
@@ -48,10 +49,10 @@
       overflow: hidden;
       bottom: 200%;
       transition: .3s;
-      li {
+      li, .li {
         margin: 1.5rem;
         &:hover {
-          color: orangered;
+          color: $red-light-1;
         }
       }
     }
@@ -69,5 +70,9 @@
       top: 200%;
       z-index: 3;
     }
+  }
+  @media screen and (max-width: 1232px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }

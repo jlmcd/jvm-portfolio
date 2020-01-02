@@ -37,9 +37,11 @@ $phone-width: 420px;
 }
 
 // PARTIALS:
+@import './global_styles';
 @import './index';
 @import './nav';
 @import './about';
+@import './contact';
 
 
 .not-found-page {
